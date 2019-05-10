@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @SuppressWarnings("serial")
-public class OngetParameter extends HttpServlet
+public class On_getParameter extends HttpServlet
 {
     protected void doPost(HttpServletRequest req,HttpServletResponse resp)throws ServletException,IOException{		
 		PrintWriter pw=  resp.getWriter();

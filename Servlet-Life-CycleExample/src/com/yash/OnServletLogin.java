@@ -8,17 +8,16 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class OnServletLogin extends HttpServlet
-{
-    protected void doPost(HttpServletRequest req,HttpServletResponse res)throws ServletException,IOException
+public class OnServletLogin extends HttpServlet{
+    protected void doPost(HttpServletRequest req,HttpServletResponse resp)throws ServletException,IOException
 	{
-		PrintWriter pw=res.getWriter();
-		res.setContentType("text/html");
+		PrintWriter pw=resp.getWriter();
+		resp.setContentType("text/html");
 
 		String user=req.getParameter("userName");
 		String pass=req.getParameter("userPassword");
 
-		if(user.equals("com")&&pass.equals("com")) 
+		if(user.equals("t")&&pass.equals("t")) 
                  pw.println("Login Success...!"); 
                 else
                  pw.println("Login Failed...!");
