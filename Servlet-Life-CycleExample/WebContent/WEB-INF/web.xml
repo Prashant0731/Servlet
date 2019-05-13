@@ -1,12 +1,23 @@
 <web-app>
-   <servlet>
-     <servlet-name>onParameterNames</servlet-name>
-     <servlet-class>com.yash.On_getParametersName</servlet-class>
-   </servlet>
+
+	<context-param>
+		<param-name>n1</param-name>
+		<param-value>100</param-value>
+	</context-param>
+	
+		<context-param>
+		<param-name>n2</param-name>
+		<param-value>200</param-value>
+	</context-param>
+	
+	<servlet>
+	    <servlet-name>OnServletContext</servlet-name>
+	    <servlet-class>com.yash.OnServletContext</servlet-class>
+	</servlet> 
 
    <servlet-mapping>
-     <servlet-name>onParameterNames</servlet-name>
-     <url-pattern>/onPM</url-pattern>
+     <servlet-name>OnServletContext</servlet-name>
+     <url-pattern>/onContext</url-pattern>
    </servlet-mapping>
 
    <welcome-file-list>
